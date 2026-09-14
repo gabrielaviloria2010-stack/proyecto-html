@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Desktop</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+            background-color: #ffffff;
+        }
+
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        .input {
+            background-color: #f7f7f7;
+            border: none;
+            border-radius: 8px;
+            height: 48px;
+            padding: 12px 16px;
+            margin-bottom: 24px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+            font-size: 15px;
+            color: #7f7f7f;
+            outline: none;
+        }
+
+        .primary-button {
+            background-color: #acd9b2;
+            border-radius: 12px;
+            border: none;
+            color: white;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            height: 52px;
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            color: #acd9b2;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 24px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .secondary-button {
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #acd9b2;
+            color: #acd9b2;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            height: 52px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <form action="/" class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="email" id="email" class="input" placeholder="camilayokoo@gmail.com">
+
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input" placeholder="*********">
+
+                <input type="submit" value="Log in" class="primary-button login-button">
+
+                <a href="/" class="forgot-password">Forgot my password</a>
+
+                <button type="button" class="secondary-button">Sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
